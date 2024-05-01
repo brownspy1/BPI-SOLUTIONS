@@ -22,8 +22,8 @@ credentials = {'bpi': '123'}
 
 
 def login():
-    user = input('Username: ')
-    password = input('Password: ')  # Use getpass to input password securely
+    user = input('\t\t\t\tUsername: ')
+    password = input('\t\t\t\tPassword: ')  # Use getpass to input password securely
     if credentials.get(user) == password:
         return True
     else:

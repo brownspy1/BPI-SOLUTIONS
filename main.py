@@ -46,7 +46,11 @@ class usardata:
 
 
 data = usardata()
-print('''
+
+
+def main():
+    data.clear_terminal()
+    print('''
                 ░░░░░░  ░░░░░░  ░░     ░░░░░░░  ░░░░░░  ░░      ░░    ░░ ░░░░░░░░ ░░  ░░░░░░  ░░░    ░░ ░░░░░░░ 
                 ▒▒   ▒▒ ▒▒   ▒▒ ▒▒     ▒▒      ▒▒    ▒▒ ▒▒      ▒▒    ▒▒    ▒▒    ▒▒ ▒▒    ▒▒ ▒▒▒▒   ▒▒ ▒▒      
                 ▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒     ▒▒▒▒▒▒▒ ▒▒    ▒▒ ▒▒      ▒▒    ▒▒    ▒▒    ▒▒ ▒▒    ▒▒ ▒▒ ▒▒  ▒▒ ▒▒▒▒▒▒▒ 
@@ -55,8 +59,6 @@ print('''
                                                                                
 ''')
 
-
-def main():
     while True:
         Choise = input("\n\t\t\t\t1.ID GENERATOR "
                        "\n\t\t\t\t2.Student management system"
@@ -69,6 +71,7 @@ def main():
                          "\n\t\t\t\t3.Main Menu"
                          "\n\t\t\t\tEnter your choice (1-3):")
             if Choi == '1':
+                data.clear_terminal()
                 print("""
                 ░░░░░░   ░░░░░  ░░░    ░░  ░░░░░░  ░░       ░░░░░  
                 ▒▒   ▒▒ ▒▒   ▒▒ ▒▒▒▒   ▒▒ ▒▒       ▒▒      ▒▒   ▒▒ 
@@ -79,6 +82,7 @@ def main():
                 data.Bangla()
                 data.clear_terminal()
             elif Choi == '2':
+                data.clear_terminal()
                 print("""
                 ░░░░░░░ ░░░    ░░  ░░░░░░  ░░      ░░ ░░░░░░░ ░░   ░░ 
                 ▒▒      ▒▒▒▒   ▒▒ ▒▒       ▒▒      ▒▒ ▒▒      ▒▒   ▒▒ 
@@ -95,14 +99,15 @@ def main():
             student_list = SMS.read_from_csv()
             if SMS.login():
                 while True:
+                    data.clear_terminal()
                     print('''
-                ░░░░░░  ░░░░░░  ░░ 
-                ▒▒   ▒▒ ▒▒   ▒▒ ▒▒ 
-                ▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒ 
-                ▓▓   ▓▓ ▓▓      ▓▓ 
-                ██████  ██      ██ 
+                                ░░░░░░  ░░░░░░  ░░ 
+                                ▒▒   ▒▒ ▒▒   ▒▒ ▒▒ 
+                                ▒▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒ 
+                                ▓▓   ▓▓ ▓▓      ▓▓ 
+                                ██████  ██      ██ 
 
-            Barisal Polytechnic Institute                
+                            Barisal Polytechnic Institute                
 
                         ''')
                     choice = int(input('\t\t\t\t1. Add Student\n'
@@ -128,7 +133,7 @@ def main():
 
                     elif choice == 2:
                         SMS.show_student(student_list)
-                        data.clear_terminal()
+
 
                     elif choice == 3:
                         edit_roll = input("\t\t\t\tWhich student's Roll to edit:")
@@ -162,11 +167,12 @@ def main():
                     elif choice == 5:
                         search_roll = input('\t\t\t\tEnter Student Roll to search:')
                         if search_roll in student_list:
+                            data.clear_terminal()
                             print(f"\t\t\t\t|%%%%%%%%%%%%%%% Student info %%%%%%%%%%%%%%%%%%|"
-                                  f"\n\t\t\t\t\t\t\tStudent Name:{student_list[search_roll]['Name']}"
-                                  f"\n\t\t\t\t\t\t\tRoll:{search_roll}"
-                                  f"\n\t\t\t\t\t\t\tDepartment:{student_list[search_roll]['Department']}"
-                                  f"\n\t\t\t\t\t\t\tSession:{student_list[search_roll]['Session']}\n"
+                                  f"\n\t\t\t\t\tStudent Name:{student_list[search_roll]['Name']}"
+                                  f"\n\t\t\t\t\tRoll:{search_roll}"
+                                  f"\n\t\t\t\t\tDepartment:{student_list[search_roll]['Department']}"
+                                  f"\n\t\t\t\t\tSession:{student_list[search_roll]['Session']}\n"
                                   f"\t\t\t\t|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|")
                             chois = input("\t\t\t\tDo you want to see more student data?[Y/N]")
                             if chois == 'N' or chois == 'n':
