@@ -41,6 +41,7 @@
 
 ## Screenshot
 ![Screenshot](https://github.com/brownspy1/ID_ganaretor/blob/main/Assats/Mockup.png)
+![Screenshot](https://github.com/brownspy1/Student_manage_bpi/blob/main/Student_manage_bpi.png)
 
 ## Contributing
 
