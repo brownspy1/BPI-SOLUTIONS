@@ -1,36 +1,36 @@
-# ID Card Generates
+```markdown
+# বিপিআই সলিউশনস
 
-This tool generates a student ID card using user input and a pre-defined photo from the folder. It creates two versions of the card - a PNG and a PDF.
-## Features
+## আইডি কার্ড জেনারেটর
+- বাংলা আইডি কার্ড
+- ইংরেজি আইডি কার্ড
 
-- Generate ID Cards: The program allows users to generate ID cards in either Bengali or English language.
+## শিক্ষার্থী ব্যবস্থাপনা সিস্টেম
+- শিক্ষার্থীর তথ্য যোগ করা 
+- শিক্ষার্থীর তথ্য দেখানো 
+- শিক্ষার্থীর তথ্য সম্পাদনা করা
+- শিক্ষার্থীর তথ্য মুছে ফেলা 
+- শিক্ষার্থী খোঁজা
 
-- Customization: Users can input personal details such as name, father's name, mother's name, session, technology, class roll, board roll, and rag number.
+## বিপিআই সলিউশনস: শিক্ষার্থীর তথ্য ব্যবস্থাপনা সিস্টেম
+বিপিআই সলিউশানস হলো একটি শিক্ষা প্রতিষ্ঠানের শিক্ষার্থীদের তথ্য সহজে সংগ্রহ, সংরক্ষণ এবং পরিচালনা করার জন্য একটি সফটওয়্যার সিস্টেম। এই সিস্টেমটি শিক্ষক এবং প্রশাসকদের সময় বাঁচায় এবং শিক্ষার্থীদের তথ্য আরও দক্ষতার সাথে পরিচালনা করতে সাহায্য করে।
 
-- Image Handling: Users can provide a photo which is then processed and included in the ID card.
+### বৈশিষ্ট্যসমূহ:
+- ছাত্রছাত্রীর আইডি কার্ড জেনারেটর: এই সিস্টেমটি বাংলা এবং ইংরেজি, দুই ভাষাতেই ছাত্রছাত্রীদের জন্য আইডি কার্ড তৈরি করতে পারে।
+- শিক্ষার্থীর তথ্য যোগ করা: নতুন শিক্ষার্থীদের তথ্য সিস্টেমে যোগ করা যায়।
+- শিক্ষার্থীর তথ্য দেখানো: আইডি বা নামের মাধ্যমে কোনো ছাত্রছাত্রীর তথ্য খুঁজে দেখা যায়।
+- শিক্ষার্থীর তথ্য সম্পাদনা করা: বিদ্যমান কোনো ছাত্রছাত্রীর তথ্য যেমন নাম বা সেশন পরিবর্তন করা যায়।
+- শিক্ষার্থীর তথ্য মুছে ফেলা: (এই অংশে সতর্কতা অবলম্বন করুন) ব্যবস্থাপকের অনুমতি সাপেক্ষে সিস্টেম থেকে কোনো ছাত্রছাত্রীর তথ্য মুছে ফেলা যায়।
+- শিক্ষার্থী খোঁজা: আপনি রোল দিয়ে শিক্ষার্থীদের খুঁজে পেতে পারবেন।
+```
 
-- QR Code Integration: The program supports generating QR codes containing the provided information, such as name, board roll, rag number, session, and technology.
-
-- CSV Data Storage: User data is stored in a CSV file (student_data.csv) for further reference.
-
-- Modularity: The code is organized into functions, enhancing readability and maintainability.
-
-- User Interaction: The program provides a simple text-based interface for users to input their choices and details.
-
-- Localization: Supports both Bengali and English languages for inputting personal details.
-
-- PDF Generation: It merges the front and back sides of the ID card into a single PDF file.
-
-## Installation (Kali and Termux)
+## Installation 
 
 1. Clone this repository: `git clone https://github.com/brownspy1/ID_ganaretor`
 2. Navigate to the project directory: `cd ID_ganaretor`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run the main program: `python main.py`
 
-## Windows
-
-For Windows users, an executable (`.exe`) file is available at [ID Ganaretor.exe](https://github.com/brownspy1/ID_ganaretor/raw/main/ID%20Ganaretor.exe).
 
 ## Dependencies
 
